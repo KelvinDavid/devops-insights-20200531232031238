@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Zip(props) {
+function CityName(props) {
 
     const [validationError, setValidationError] = useState(null);
 
