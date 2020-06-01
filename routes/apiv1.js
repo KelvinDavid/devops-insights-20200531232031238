@@ -16,7 +16,7 @@ exports.getWeather = function(req, res) {
 	{
 		return res.status(400).send('city name missing');
 	}
-	var aurl = OPENWEATHERURL + '&city=' + city + ',nz';
+	var aurl = OPENWEATHERURL + '&q=' + city + ',nz';
 //	var zip = req.query.zip;
 //	if( (zip === null) || (typeof(zip) === 'undefined') ) {
 //		return res.status(400).send('zip missing');

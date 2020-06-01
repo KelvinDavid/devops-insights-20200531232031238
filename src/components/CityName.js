@@ -12,7 +12,7 @@ function CityName(props) {
             props.clearResponse();
         } else {
             setValidationError('');
-            props.onZipChange(event.target.value);
+            props.onCityChange(event.target.value);
         }
     };
 
