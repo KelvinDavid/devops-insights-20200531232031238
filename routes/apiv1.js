@@ -12,7 +12,7 @@ var OPENWEATHERURL = "https://api.openweathermap.org/data/2.5/weather?appid=6b7b
 exports.getWeather = function(req, res) {
 	//parsing city name
 	var city = req.query.city;
-	if((city === null) || (typeof(zip) === 'undefined'))
+	if((city === null) || (typeof(city) === 'undefined'))
 	{
 		return res.status(400).send('city name missing');
 	}
